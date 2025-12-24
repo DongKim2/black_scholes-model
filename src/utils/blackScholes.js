@@ -46,7 +46,7 @@ export const calculateGreeks = (S, K, T, r, sigma, type = 'call') => {
     const pdfD1 = stdNormalPDF(d1);
     const cdfD1 = stdNormalCDF(d1);
     const cdfD2 = stdNormalCDF(d2);
-    const cdfNegD1 = stdNormalCDF(-d1);
+
     const cdfNegD2 = stdNormalCDF(-d2);
 
     let delta, theta, rho;
