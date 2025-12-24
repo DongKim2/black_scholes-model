@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, ReferenceLine } from 'recharts';
-import { calculateOptionPrice } from '../utils/blackScholes';
+
 
 export default function PnLChart({ S, K, T, r, sigma, callPrice, putPrice }) {
     const data = useMemo(() => {
